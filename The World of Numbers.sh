@@ -1,1 +1,7 @@
-The World of Numbers
+read X
+read Y
+
+echo `expr $X + $Y`
+echo `expr $X - $Y`
+echo `expr $X \* $Y`
+echo `expr $X / $Y`
