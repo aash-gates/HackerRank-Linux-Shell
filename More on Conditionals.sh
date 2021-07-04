@@ -1,11 +1,12 @@
-read a
-read b
-read c
+read x
+read y
+read z
 
-if [ `$a -eq $`b ] && [ `$a -eq $`c ]; then
-    echo "EQUILATERAL"
-elif [ `$a -eq $`b ] || [ `$a -eq $`c ] || [ `$b -eq $`c ]; then
-    echo "ISOSCELES"
+if (( $x == "$y")) && (( $y == "$z")) ; then
+    echo 'EQUILATERAL'
+elif (( $x == "$y" )) || (( $x == "$z" )) || (( $y == "$z" )) ; then
+    echo 'ISOSCELES'
 else
-    echo "SCALENE"
+    echo 'SCALENE'
 fi
+    
