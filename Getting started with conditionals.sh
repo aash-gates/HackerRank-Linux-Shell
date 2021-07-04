@@ -1,6 +1,7 @@
-read a
-if [ `$a == "y" ] || [ $`a == "Y" ]; then
-  echo "YES"
-elif [ `$a == "n" ] || [ $`a == "N" ]; then
-  echo "NO"
+read answer
+
+if [[ ${answer,,}  == 'y' ]] ; then
+    echo 'YES'
+elif [[ ${answer,,} == 'n' ]] ; then
+    echo 'NO'
 fi
