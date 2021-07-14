@@ -1,0 +1,1 @@
+awk -v c=3 '{if(NR%c){printf $0"\t"}else{printf $0"\n"}}'
