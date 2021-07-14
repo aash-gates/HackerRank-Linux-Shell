@@ -1,7 +1,1 @@
-paste -s -d";"
-
-where
-
--s = serial
-
--d";" = delimiter separated by ;
+paste -s | tr $'\t' ";"
